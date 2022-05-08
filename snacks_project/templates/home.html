@@ -8,6 +8,11 @@
 </head>
 <body>
     {% block body %}This is the home page {% endblock %}
+    {% block nav %}
+        <ul id="nav">
+            <li>{% block nav-about %}<a href="{% url 'about' %}">About</a>{% endblock %}</li>
+        </ul>
+    {% endblock %}
     
 </body>
 </html>
