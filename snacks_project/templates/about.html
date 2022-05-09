@@ -1,10 +1,9 @@
-{% extends 'home.html' %}
-
+{% extends "base.html" %}
 
 {% block page_title %}About{% endblock %}
 
-{% block nav-about %}<strong class="nav-active">About</strong>{% endblock %}
+{% block content %}
+{% block page_content %} <h3>Welcome to the About page</h3> {% endblock %}
+{% block page_footer %} <p>Copyright &copy; {{ current_year }} 2022</p> {% endblock %}
 
-
-{% block body %} This is the about page {% endblock %}
-
+{% endblock %}
